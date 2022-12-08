@@ -1,0 +1,93 @@
+.send-commets-wrapper {
+    width: 100%;
+    color: var(--font-color);
+    margin: 1rem 0;
+}
+.send-commets-wrapper {
+    display: flex;
+    align-items: center;
+}
+.send-commets-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+.send-commets-box svg {
+    margin: 0 0.5rem;
+}
+.send-commets-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 2px var(--font-color);
+    border-radius: 20px;
+}
+
+.send-commets-box input {
+    color: var(--font-color);
+    font-size: 1rem;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.commets-send {
+    background-color: transparent;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: var(--login-btn-bg);
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.commets-send:hover {
+    opacity: 0.7;
+}
+
+
+/* ALL COMMETS CONTAINER  */
+.all-commets-wrapper {
+    max-height: 300px;
+    overflow-y: auto;
+}
+.all-commets-wrapper::-webkit-scrollbar {
+    width: 3px;
+}
+.all-commets-wrapper::-webkit-scrollbar-thumb {
+    background-color: var(--login-btn-bg);
+    border-radius: 6px;
+}
+
+
+
+
+.all-commets-box {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.all-commets-left img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.all-commets-right {
+    width: calc(100% - 30px - 1rem - 100px);
+}
+.all-commets-right p {
+    font-weight: 500;
+}
+.all-commets-time {
+    width: 100px;
+}
+.all-commets-time small {
+    opacity: 0.8;
+}

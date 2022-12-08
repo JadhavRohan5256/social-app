@@ -1,0 +1,17 @@
+.home-content {
+    /* padding: 0 10px; */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.home-content::-webkit-scrollbar {
+    width: 3px;
+    display: none;
+}
+/* .home-content::-webkit-scrollbar-thumb {
+    background-color: var(--login-btn-bg);
+}
+.home-content::-webkit-scrollbar-track {
+    background-color: var(--bg-surface);
+} */
+
+

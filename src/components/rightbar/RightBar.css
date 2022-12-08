@@ -1,0 +1,242 @@
+.right-bar {
+    border-radius: 10px;
+    color: var(--font-color);
+    overflow-y: auto;
+    /* padding: 0 20px; */
+}
+
+.right-bar::-webkit-scrollbar {
+    width: 3px;
+    display: none;
+}
+/* .right-bar::-webkit-scrollbar-thumb {
+    background-color: var(--login-btn-bg);
+    border-radius: 20px;
+}
+.right-bar::-webkit-scrollbar-track {
+    background-color: var(--bg-surface);
+    border-radius: 20px;
+} */
+
+.right-bar-wrapper {
+    background-color: var(--bg-surface);
+    padding: 15px 0px 15px 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.right-bar-wrapper:first-of-type,
+.right-bar-wrapper:last-of-type {
+    margin: 0;
+}
+
+
+/* SUGGESTION CSS  */
+.right-bar-suggestions {
+    max-height: 50vh;
+    overflow: auto;
+    padding-right: 15px;
+}
+
+.right-bar-suggestions::-webkit-scrollbar {
+    width: 3px;
+}
+.right-bar-suggestions::-webkit-scrollbar-thumb {
+    background-color: var(--login-btn-bg);
+}
+
+.suggestion-title {
+    font-weight: 500;
+    margin-bottom: 0.7rem;
+}
+.suggestion-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.7rem 0;
+}
+
+.suggestion-wrapper:last-of-type {
+    margin: 0;
+}
+.suggestion-left {
+    display: flex;
+    align-items: center;
+}
+.suggestion-left img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 0.5rem;
+}
+
+
+
+.suggestion-left p {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.suggestion-right {
+    display: flex;
+    align-items: center;
+}
+.suggestion-right button {
+    padding: 0.2rem 0.5rem;
+    color: #fff;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    border: none;
+}
+.suggestion-right button:hover {
+    opacity: 0.5;
+}
+.follow {
+    background-color: var(--success);
+    margin-right: 0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.dismiss {
+    background-color: var(--error);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* LATEST ACTIVITY CSS  */
+.right-bar-activities {
+    max-height: 50vh;
+    overflow: auto;
+    padding-right: 15px;
+}
+
+.right-bar-activities::-webkit-scrollbar {
+    width: 3px;
+}
+.right-bar-activities::-webkit-scrollbar-thumb {
+    background-color: var(--login-btn-bg);
+}
+
+.right-bar-activities p:first-of-type {
+    font-weight: 500;
+    margin-bottom: 0.7rem;
+}
+
+.activity-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.7rem 0;
+}
+
+.activity-wrapper:last-of-type {
+    margin: 0;
+}
+
+.activity-left {
+    width: calc(100% - 80px);
+    display: flex;
+    align-items: center;
+}
+.activity-left img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 0.5rem;
+}
+.activity-left-box {
+    width: calc(100% - 30px);
+    display: flex;
+    flex-wrap: wrap;
+}
+.activity-profile-name {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.activity-mess,
+.activity-post-time {
+    opacity: 0.7;
+    margin-left: 0.2rem;
+}
+
+.activity-post-time {
+    width: 80px;
+    text-align: end;
+}
+/* ONLINE FRIENDS CSS  */
+.online-friends {
+    max-height: 50vh;
+    overflow: auto;
+    padding-right: 15px;
+}
+
+.online-friends::-webkit-scrollbar {
+    width: 3px;
+}
+.online-friends::-webkit-scrollbar-thumb {
+    background-color: var(--login-btn-bg);
+}
+.online-friends p {
+    font-weight: 500;
+    margin-bottom: 0.7rem;
+}
+.online-friend-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0.7rem 0;
+    position: relative;
+}
+.online-friend-wrapper:last-of-type {
+    margin: 0;
+}
+
+.online-friend-wrapper img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 0.5rem;
+    position: relative;
+}
+
+.online {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: var(--success);
+    position: absolute;
+    left: calc(30px - 18px / 2);
+    top: calc(0px);
+    border: 0;
+    transition: border 0.3s ease-in-out;
+}
+.online:hover {
+    border: 1px solid #fff;
+}
+
+.online-friend-wrapper small {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+
+/* responsive queries  */
+
+@media only screen and (max-width: 1000px) {
+    .right-bar {
+        position: absolute;
+        width: 300px;
+        right: 0;
+        height: 100%;
+        display: none;
+        z-index: 33;
+    }
+    .online-friends {
+        margin-bottom: 20px;
+    }
+}

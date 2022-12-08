@@ -1,0 +1,71 @@
+
+
+/* GLOBAL CSS  */
+.left-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+.left-box:hover {
+    background-color: #ffffff2d;
+}
+
+.left-box img {
+    width: 20px;
+    margin-right: 0.5rem;
+}
+.left-box a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+.left-box span {
+    font-weight: 500;
+}
+.left-box a {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* LEFT-BAR-TOP CSS  */
+.left-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    /* padding: 0.5rem 0; */
+    border-radius: 10px;
+}
+
+.left-bar-top {
+    width: 100%;
+    border-bottom: 1px solid var(--font-color);
+}
+.left-bar-top .left-box:first-of-type {
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;padding-top: 1rem;
+}
+/* LEFT-BAR-MIDDLE CSS  */
+.left-bar-middle {
+    width: 100%;
+    border-bottom: 1px solid var(--font-color);
+}
+/* LEFT-BAR-BOTTOM CSS  */
+.left-bar-bottom {
+    width: 100%;
+}
+
+@media only screen and (max-width: 590px) {
+    /* .left-bar {
+        display: none;
+    } */
+
+    .left-bar {
+        position: absolute;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        display: none;
+        z-index: 33;
+    }
+}

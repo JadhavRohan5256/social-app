@@ -1,0 +1,140 @@
+.nav-wrapper {
+    background-color: var(--bg-surface);
+    height: 50px;
+    color: var(--font-color);
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+
+/* GLOBAL CSS */
+.nav-icons {
+    width: 40px;
+    margin: 0 0.5rem;
+}
+
+
+/* NAV LEFT SIDE CSS */
+.nav-bar-left {
+    display: flex;  
+    align-items: center;  
+}
+
+.nav-bar-left h2 {
+    color: var(--font-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+.menu-bar-box {
+    display: none;
+    position: relative;
+    color: var(--font-color);
+}
+.menu-bar-wrapper {
+    display: none;
+    width: 120px;
+    position: absolute;
+    left: -60px;
+    top: 150%;
+    background-color: var(--bg-surface);
+    box-shadow: 0px 0px 2px var(--font-color);
+    padding: 1rem 0.5rem;
+    z-index: 22;
+    border-radius: 10px;
+}
+.menu-bar-wrapper p {
+    font-weight: 500;
+    cursor: pointer;
+}
+#isCheck {
+    display: none;
+}
+/* NAV MIDDLE SIDE CSS */
+.middle-box {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 2px var(--font-color);
+    padding: 0.2rem 0.5rem;
+    border-radius: 20px;
+}
+.middle-box svg {
+    font-size:1.4rem;
+    margin: 0;
+    margin-right: 0.5rem;
+}
+.middle-box input {
+    width: 300px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 1.1rem;
+    color: var(--font-color);
+}
+/* NAV RIGHT SIDE CSS */
+.nav-bar-right {
+    display: flex;
+    align-items: center;
+}
+.nav-bar-right img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+.nav-bar-right h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width: 980px) {
+    .nav-bar-left {
+        order: 0;
+    }
+    .nav-bar-right {
+        order: 1;
+    }
+    .nav-bar-middle {
+        order: 3;
+        width: 100%;
+    }
+    .middle-box {
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .nav-wrapper {
+        height: 100px;
+    }
+
+    .menu-bar-box {
+        display: block;
+    }
+
+    #isCheck:checked + .menu-bar-wrapper{
+        display: block;
+    }
+    .left-bar-menu {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .nav-bar-right {
+        display: none;
+    }
+    .left-bar-menu {
+        display: block;
+    }
+}
